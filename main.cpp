@@ -8,8 +8,8 @@ void TestResponses();
 
 
 int main(){
-    freopen("input4.json", "r", stdin);
-    freopen("ans_muy.json", "w", stdout);
+    freopen("input/other_input.json", "r", stdin);
+    freopen("output/output5.json", "w", stdout);
     //TestRunner tr;
     //RUN_TEST(tr, TestUpdateRequests);
     //RUN_TEST(tr, TestReadRequests);

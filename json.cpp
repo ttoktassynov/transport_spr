@@ -27,35 +27,6 @@ namespace Json {
     return Node(move(result));
   }
 
-  /*Node LoadDouble(istream& input) {
-    double result_double;
-    int minus = 1;
-    if (input.peek() == '-') { 
-      minus *= - 1;
-      input.ignore();
-    }
-    uint64_t result = 0;
-
-    while (isdigit(input.peek())) {
-      result *= 10;
-      result += input.get() - '0';
-    }
-
-    result *= minus;
-
-    bool isDouble = false;
-
-    if (input.peek() == '.') {
-      input.ignore();
-      result_double = result;
-      isDouble = true;
-      for(int i = 1; isdigit(input.peek()); i++) {
-        result_double += ((input.get() - '0') / (std::pow(10, i))) * minus;
-      }
-    }
-    return (isDouble) ? result_double : static_cast<double>(result);
-  }*/
-
   Node LoadDouble(istream& input){
     double result;
     input >> result;
