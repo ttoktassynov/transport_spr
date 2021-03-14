@@ -1,8 +1,11 @@
 # Bus router
+
 This is a C++ Bus Router application that is able to store bus stops and routes and identify shortest trips, in terms of time.
 
 ## Input/output examples
+
 ### AddStopRequest input example
+
 ```
 {
 	"type": "Stop",
@@ -16,6 +19,7 @@ This is a C++ Bus Router application that is able to store bus stops and routes 
 ```
 
 ### AddRouteRequest input example
+
 ```
 {
 	"type": "Bus",
@@ -34,6 +38,7 @@ This is a C++ Bus Router application that is able to store bus stops and routes 
 ```
 
 ### ReadRouteRequest input example
+
 ```
 {
 	"type": "Bus",
@@ -43,6 +48,7 @@ This is a C++ Bus Router application that is able to store bus stops and routes 
 ```
 
 ### ReadStopRequest output example 
+
 ```
 {
     "route_length": 5950,
@@ -54,6 +60,7 @@ This is a C++ Bus Router application that is able to store bus stops and routes 
 ```
 
 ### ReadStopRequest input example
+
 ```
 {
 	"type": "Stop",
@@ -63,6 +70,7 @@ This is a C++ Bus Router application that is able to store bus stops and routes 
 ```
 
 ### ReadStopRequest output example
+
 ```
 {
     "buses": [
@@ -74,6 +82,7 @@ This is a C++ Bus Router application that is able to store bus stops and routes 
 ```
 
 ### ReadRouteSearchRequest input example
+
 ```
 {
 	"type": "Route",
@@ -84,6 +93,7 @@ This is a C++ Bus Router application that is able to store bus stops and routes 
 ```
 
 ### ReadRouteSearchRequest output example
+
 ```
 {
 	"total_time": 11.235,
@@ -105,8 +115,10 @@ This is a C++ Bus Router application that is able to store bus stops and routes 
 ```
 
 ### To run the project:
-1. Clone this project
-2. Add following task in VS code:
+
+- Clone this project
+- Add following task if you are using VS code:
+
 ```
 {
 			"type": "cppbuild",
@@ -131,6 +143,7 @@ This is a C++ Bus Router application that is able to store bus stops and routes 
 			"detail": "compiler: /usr/bin/clang++"
 		}
 ```
-3. Start task named *C/C++: clang++ build directory*
-3. Run ./main and observe results in output directory
+
+- Start task named *C/C++: clang++ build directory*
+- Run ./main and observe results in output directory
 
